@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slideshow:)</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="slider">
+		<div class="slide-item">
+			<img src="images/slide-1.jpg" alt="first slide">
+		</div>
+		<div class="slide-item">
+			<img src="images/slide-2.jpg" alt="second slide">
+		</div>
+		<div class="slide-item">
+			<img src="images/slide-3.jpg" alt="third slide">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/myslider.js"></script>
+	<script>
+	//Initialize new slider object with params
+	window.onload = function() {
+		var sld = new Slider({
+			sliderWrapper: '#slider',
+			showControls: true,
+			autoplay: true,
+			interval: 3000
+		});
+		sld.init();
+	};
+	</script>
+</body>
+</html>
